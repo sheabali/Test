@@ -19,6 +19,7 @@ export function Providers({ children }: { children: ReactNode }) {
         },
       }),
   )
+  // Ensure the query client is only created once and not on every render
 
   return (
     <QueryClientProvider client={queryClient}>
